@@ -1,0 +1,20 @@
+Sensor Categories
+id,name
+20,Pressure
+21,CO2_level
+22,CO2_level_and_Pressure
+23,CO_level
+Sensors
+id,lon,lat,create_date,name,model,category
+2,1000.0,1000.0,2019-12-04,ATM1,0001,Pressure
+3,-1000.0,1000.0,2019-12-04,ATM2,0002,Pressure
+4,1000.0,-1000.0,2019-12-04,ATM3,0003,CO2_level
+5,-1000.0,-1000.0,2019-12-04,ATM4,0004,CO2_level
+6,-2000.0,-1000.0,2019-12-04,ATM5,0005,CO2_level_and_Pressure
+7,1.0,1.0,2019-12-04,ATM7,0007,CO_level
+Snapshots
+id,temperature,pressure,co2_level,sensor
+1,12.0,222.0,222.0,ATM1
+2,12.0,3.0,3.0,ATM2
+3,30.0,5.0,7.0,ATM4
+4,10.0,10.0,12.0,ATM5

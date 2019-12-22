@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Success</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <h1 class="mt-2">Success</h1>
+                    <hr class="mt-0 mb-4">
+                    {% if data == 'sensor_category' %}
+                        <h2 class="text-success">Sensor category successfully created</h2>
+                    {% elif data == 'sensor' %}
+                        <h2 class="text-success">Sensor successfully created</h2>
+                    {% elif data == 'snapshot' %}
+                        <h2 class="text-success">Snapshot successfully created</h2>
+                    {% elif data == 'csv' %}
+                        <h2 class="text-success">Data successfully exported into CSV</h2>
+                        <a class="btn btn-success" href="/data/csv/" role="button">Get</a>
+                    {% elif data == 'odt' %}
+                        <h2 class="text-success">Data successfully exported into ODT</h2>
+                        <a class="btn btn-success" href="/data/odt/" role="button">Download</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

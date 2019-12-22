@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Fail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <h1 class="mt-2">Fail</h1>
+                    <hr class="mt-0 mb-4">
+                    {% if data == 'sensor_category' %}
+                        <h2 class="text-danger">Sensor category failed in creation</h2>
+                    {% elif data == 'sensor' %}
+                        <h2 class="text-danger">Sensor failed in creation</h2>
+                    {% elif data == 'snapshot' %}
+                        <h2 class="text-danger">Snapshot failed in creation</h2>
+                    {% elif data == 'csv' %}
+                        <h2 class="text-danger">Data failed in exporting into CSV</h2>
+                    {% elif data == 'odt' %}
+                        <h2 class="text-danger">Data failed in exporting into ODT</h2>
+                    {% elif data == 'csv_get' %}
+                        <h2 class="text-danger">Data in CSV format doesn't exist</h2>
+                    {% elif data == 'odt_get' %}
+                        <h2 class="text-danger">Data in ODT format doesn't exist</h2>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
